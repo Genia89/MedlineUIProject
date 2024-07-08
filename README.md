@@ -23,3 +23,5 @@ To get started, clone the repository to your local machine using the following c
 ```sh
 git clone https://github.com/Genia89/MedlineUIProject.git
 cd MedlineUIProject
+mvn clean install
+mvn test
