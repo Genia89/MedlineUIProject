@@ -30,13 +30,13 @@ mvn test
 ## Known Issues
 ### Text Encoding Issue in Search Box
 **Description:**
-When entering "women's scrubs" in the search box, the text is displayed as "women's scrub" after hitting enter. The apostrophe is improperly encoded as &#039;.
+When entering "women's scrubs" in the search box, the text is displayed as "women`&#039;`s scrub" after hitting enter. The apostrophe is improperly encoded as `&#039;`.
 
 **Steps to Reproduce:**
-1.Go to the search page.
-2.Enter "women's scrubs" in the search box.
-3.Press enter.
-4.Observe the search box displaying "women`&#039;`s scrub" instead of "women's scrubs."
+1. Go to the search page.
+2. Enter "women's scrubs" or any word with the apostrophe in the search box.
+3. Press enter.
+4. Observe the search box displaying "women`&#039;`s scrub" instead of "women's scrubs."
 
 **Expected Result:**
 The search box should display "women's scrubs" without improper encoding.
