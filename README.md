@@ -8,6 +8,7 @@ This project is a Selenium-based testing framework that uses TestNG for test man
 - **Page Object Model (POM)**: Maintain a clean separation between test logic and page elements.
 - **Maven**: Manage dependencies and build processes.
 - **Logging**: Use SLF4J for logging actions and errors.
+- **Singleton Design Pattern**: Ensure a single instance of WebDriver is used throughout the tests.
 
 ## Prerequisites
 - Java JDK 8 or higher
@@ -25,3 +26,26 @@ git clone https://github.com/Genia89/MedlineUIProject.git
 cd MedlineUIProject
 mvn clean install
 mvn test
+```
+## Known Issues
+### Text Encoding Issue in Search Box
+**Description:**
+When entering "women's scrubs" in the search box, the text is displayed as "women's scrub" after hitting enter. The apostrophe is improperly encoded as &#039;.
+
+**Steps to Reproduce:**
+1.Go to the search page.
+2.Enter "women's scrubs" in the search box.
+3.Press enter.
+4.Observe the search box displaying "women`&#039;`s scrub" instead of "women's scrubs."
+
+**Expected Result:**
+The search box should display "women's scrubs" without improper encoding.
+
+**Actual Result:**
+The search box displays "women`&#039;`s scrub" with improper encoding of the apostrophe.
+
+## Testing Limitations
+### Automation Blocked by Target Website
+**Description:**
+The target website blocks automation tools like Selenium, preventing WebDriver from running the automated tests.
+This means that while the framework is set up and the test scripts are written the execution of this tests could not be performed.
