@@ -31,7 +31,16 @@ public abstract class BasePageUI {
         log.info("******Browser is closing******");
     }
 
-    protected void baseTestSteps(){
+    /**
+     * This method performs the basic test steps:
+     * Navigates to the homepage.
+     * Verifies the homepage title.
+     * Clicks on the home menu.
+     * Clicks on the Medline at Home menu.
+     * Verifies the Women's Health and Wellbeing title.
+     * It has a common set of actions that multiple test classes need to perform.
+     */
+    protected void baseTestSteps() {
         //Navigate to homepage and click home menu, and verify Women's health and well being title.
         HomePage homePage = new HomePage();
         Assert.assertEquals(homePage.getMedlineHomePageTitle(),
