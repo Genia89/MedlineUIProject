@@ -48,4 +48,4 @@ The search box displays "women`&#039;`s scrub" with improper encoding of the apo
 ### Automation Blocked by Target Website
 **Description:**
 The target website blocks automation tools like Selenium, preventing WebDriver from running the automated tests.
-This means that while the framework is set up and the test scripts are written the execution of this tests could not be performed.
+This means that while the framework is set up and the test scripts are written the execution of these tests could not be performed.
