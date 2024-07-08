@@ -32,6 +32,11 @@ public class MedlineAtHomePage {
     @FindBy(css = "div:nth-child(3) > span > a")
     public WebElement brandsDropdown;
 
+    /**
+     * Clicks on the "Products" dropdown menu if it is displayed.
+     *
+     * @return true if the "Products" dropdown was clicked, false otherwise
+     */
     public boolean clickProductsDropdown() {
         if (seleniumUtils.isDisplayed(driver, productsDropdown)) {
             seleniumUtils.click(driver, productsDropdown);
@@ -39,6 +44,12 @@ public class MedlineAtHomePage {
         }
         return false;
     }
+
+    /**
+     * Clicks on the "Shop By Need" dropdown menu if it is displayed.
+     *
+     * @return true if the "Shop By Need" dropdown was clicked, false otherwise
+     */
 
     public boolean clickShopByNeedDropdown() {
         if (seleniumUtils.isDisplayed(driver, shopByNeedDropdown)) {
@@ -48,6 +59,11 @@ public class MedlineAtHomePage {
         return false;
     }
 
+    /**
+     * Clicks on the "Brands" dropdown menu if it is displayed.
+     *
+     * @return true if the "Brands" dropdown was clicked, false otherwise
+     */
     public boolean clickBrandsDropdown() {
         if (seleniumUtils.isDisplayed(driver, brandsDropdown)) {
             seleniumUtils.click(driver, brandsDropdown);

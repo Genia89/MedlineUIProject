@@ -127,13 +127,18 @@ public class ProductsPage {
     @FindBy(xpath = "//div/nav/div[1]/div/div[20]/button/span")
     public WebElement vitaminsAndSupplementsLinkBackBtn;
 
-
-
+    /**
+     * Retrieves the title text of the product.
+     *
+     * @return the title of the product as a String
+     */
     public String getProductTitle() {
         return seleniumUtils.getText(productTitle);
-
     }
 
+    /**
+     * Clicks on the "Products Shop All" link.
+     */
     public void clickProductsShopAll() {
         seleniumUtils.click(driver, clickProductsShopAll);
     }
@@ -151,7 +156,6 @@ public class ProductsPage {
         }
         return false;
     }
-
 
 
     /**
@@ -191,7 +195,7 @@ public class ProductsPage {
     public boolean verifyHearingAidsAndAmplifiersLink() {
         if (seleniumUtils.isDisplayed(driver, hearingAidsAndAmplifiersLink)) {
             seleniumUtils.click(driver, hearingAidsAndAmplifiersLink);
-            seleniumUtils.click(driver, hearingAidsAndAmplifiersLinkBackBtn );
+            seleniumUtils.click(driver, hearingAidsAndAmplifiersLinkBackBtn);
             return true;
         }
         return false;
@@ -248,7 +252,7 @@ public class ProductsPage {
     public boolean verifyMedicationsOverTheCounterLink() {
         if (seleniumUtils.isDisplayed(driver, medicationsOverTheCounterLink)) {
             seleniumUtils.click(driver, medicationsOverTheCounterLink);
-            seleniumUtils.click(driver,medicationsOverTheCounterLinkBackBtn);
+            seleniumUtils.click(driver, medicationsOverTheCounterLinkBackBtn);
             return true;
         }
         return false;
@@ -262,7 +266,7 @@ public class ProductsPage {
     public boolean verifyMobilityLink() {
         if (seleniumUtils.isDisplayed(driver, mobilityLink)) {
             seleniumUtils.click(driver, mobilityLink);
-            seleniumUtils.click(driver,mobilityLinkBackBtn);
+            seleniumUtils.click(driver, mobilityLinkBackBtn);
             return true;
         }
         return false;
@@ -276,7 +280,7 @@ public class ProductsPage {
     public boolean verifyMomAndBabyCareLink() {
         if (seleniumUtils.isDisplayed(driver, momAndBabyCareLink)) {
             seleniumUtils.click(driver, momAndBabyCareLink);
-            seleniumUtils.click(driver,momAndBabyCareLinkBackBtn);
+            seleniumUtils.click(driver, momAndBabyCareLinkBackBtn);
             return true;
         }
         return false;
@@ -304,7 +308,7 @@ public class ProductsPage {
     public boolean verifyOstomyAndUrologySupplyLink() {
         if (seleniumUtils.isDisplayed(driver, ostomyAndUrologySupplyLink)) {
             seleniumUtils.click(driver, ostomyAndUrologySupplyLink);
-            seleniumUtils.click(driver,ostomyAndUrologySupplyLinkBackBtn);
+            seleniumUtils.click(driver, ostomyAndUrologySupplyLinkBackBtn);
             return true;
         }
         return false;

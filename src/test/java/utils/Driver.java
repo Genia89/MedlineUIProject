@@ -19,6 +19,11 @@ public class Driver {
 
     private static WebDriver driver;
 
+    /**
+     * Retrieves the WebDriver instance based on the configured browser type.
+     *
+     * @return WebDriver instance (ChromeDriver)
+     */
     public static WebDriver getDriver() {
 
         if (driver == null) {
@@ -52,7 +57,9 @@ public class Driver {
         return driver;
 
     }
-
+    /**
+     * Closes the WebDriver instance if it is not null.
+     */
     public static void closeDriver() {
         if (driver != null) {
             driver.quit();

@@ -57,49 +57,97 @@ public class SearchPage {
     @FindBy(css = ".cart.main.actions  a")
     public WebElement continueShoppingBtn;
 
+    /**
+     * Enters the specified text into the search box and presses Enter.
+     *
+     * @param text the text to be entered into the search box
+     */
     public void enterText(String text) {
         seleniumUtils.type(searchBox, text + Keys.ENTER);
     }
 
+    /**
+     * Clicks on the first product in the search results.
+     */
     public void clickOnSearchResult() {
         seleniumUtils.click(driver, clickOnFirstProduct);
     }
 
+    /**
+     * Checks if the search result title is displayed.
+     *
+     * @return true if the search result title is displayed, false otherwise
+     */
     public boolean getSearchResultTitle() {
         return seleniumUtils.isDisplayed(driver, verifyTitle);
     }
 
+    /**
+     * Clicks on the "Add to Cart" button.
+     */
     public void clickAddToCart() {
         seleniumUtils.click(driver, addToCart);
     }
 
+    /**
+     * Retrieves the quantity of the product.
+     *
+     * @return the quantity of the product as a String
+     */
     public String getQuantity() {
         return seleniumUtils.getText(quantity);
     }
 
+    /**
+     * Clicks on the shopping cart.
+     */
     public void clickShoppingCart() {
         seleniumUtils.click(driver, clickShoppingCart);
     }
 
+    /**
+     * Verifies if the product is present in the cart.
+     *
+     * @return true if the product is present in the cart, false otherwise
+     */
     public boolean verifyProductsInCart() {
         return seleniumUtils.isDisplayed(driver, checkProductInCart);
     }
 
+    /**
+     * Checks if the unit price is displayed.
+     *
+     * @return true if the unit price is displayed, false otherwise
+     */
     public boolean isUnitPriceDisplayed() {
         return seleniumUtils.isDisplayed(driver, unitPrice);
     }
 
+    /**
+     * Retrieves the quantity of the product in the cart.
+     *
+     * @return the quantity of the product in the cart as a String
+     */
     public String getQuantityInCart() {
         return seleniumUtils.getText(quantityInCart);
     }
 
+    /**
+     * Checks if the subtotal is displayed.
+     *
+     * @return true if the subtotal is displayed, false otherwise
+     */
     public boolean isSubtotalDisplayed() {
         return seleniumUtils.isDisplayed(driver, subtotal);
     }
 
+    /**
+     * Verifies if the "Continue Shopping" button is displayed.
+     *
+     * @return true if the "Continue Shopping" button is displayed, false otherwise
+     */
     public boolean verifyContinueShoppingBtn() {
         return seleniumUtils.isDisplayed(driver, continueShoppingBtn);
-
     }
 
 

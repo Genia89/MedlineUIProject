@@ -77,12 +77,19 @@ public class BrandsPage {
     @FindBy(xpath = "(//nav/div[3]/div/div/a[17]/span/text())[1]")
     public WebElement marthaStewartLink;
 
-
+    /**
+     * Clicks on the "Brands Shop All" link.
+     */
     public void clickBrandsShopAll() {
         seleniumUtils.click(driver, clickBrandsShopAll);
     }
 
-    public String getBrandsTitle(){
+    /**
+     * Retrieves the title of the Brands page.
+     *
+     * @return the title of the Brands page as a String
+     */
+    public String getBrandsTitle() {
         return seleniumUtils.getText(brandsTitle);
     }
 
@@ -91,8 +98,8 @@ public class BrandsPage {
      *
      * @return true if the link was clicked, false otherwise
      */
-    public boolean verifyActiveICELink(){
-        if (seleniumUtils.isDisplayed(driver, activeICELink)){
+    public boolean verifyActiveICELink() {
+        if (seleniumUtils.isDisplayed(driver, activeICELink)) {
             return true;
         }
         return false;
@@ -103,8 +110,8 @@ public class BrandsPage {
      *
      * @return true if the link was clicked, false otherwise
      */
-    public boolean verifyMicrobanLink(){
-        if (seleniumUtils.isDisplayed(driver, microbanLink)){
+    public boolean verifyMicrobanLink() {
+        if (seleniumUtils.isDisplayed(driver, microbanLink)) {
             return true;
         }
         return false;
@@ -115,8 +122,8 @@ public class BrandsPage {
      *
      * @return true if the link was clicked, false otherwise
      */
-    public boolean verifyMomentumLink(){
-        if (seleniumUtils.isDisplayed(driver, momentumLink)){
+    public boolean verifyMomentumLink() {
+        if (seleniumUtils.isDisplayed(driver, momentumLink)) {
             return true;
         }
         return false;
@@ -128,7 +135,7 @@ public class BrandsPage {
      * @return true if the link was clicked, false otherwise
      */
 
-    public boolean verifySimplySoftLink(){
+    public boolean verifySimplySoftLink() {
         if (seleniumUtils.isDisplayed(driver, simplySoftLink)) {
             return true;
         }
@@ -141,8 +148,8 @@ public class BrandsPage {
      * @return true if the link was clicked, false otherwise
      */
 
-    public boolean verifyMedlineOTCHearingAidsLink(){
-        if (seleniumUtils.isDisplayed(driver, medlineOTCHearingAidsLink)){
+    public boolean verifyMedlineOTCHearingAidsLink() {
+        if (seleniumUtils.isDisplayed(driver, medlineOTCHearingAidsLink)) {
             return true;
         }
         return false;
@@ -153,8 +160,8 @@ public class BrandsPage {
      *
      * @return true if the link was clicked, false otherwise
      */
-    public boolean verifyCuradLink(){
-        if (seleniumUtils.isDisplayed(driver, curadLink)){
+    public boolean verifyCuradLink() {
+        if (seleniumUtils.isDisplayed(driver, curadLink)) {
             return true;
         }
         return false;
@@ -166,8 +173,8 @@ public class BrandsPage {
      * @return true if the link was clicked, false otherwise
      */
 
-    public boolean verifyFitRightLink(){
-        if (seleniumUtils.isDisplayed(driver, fitRightLink)){
+    public boolean verifyFitRightLink() {
+        if (seleniumUtils.isDisplayed(driver, fitRightLink)) {
             return true;
         }
         return false;
@@ -179,8 +186,8 @@ public class BrandsPage {
      *
      * @return true if the link was clicked, false otherwise
      */
-    public boolean verifyFitRightFreshStartLink(){
-        if (seleniumUtils.isDisplayed(driver, fitRightFreshStartLink)){
+    public boolean verifyFitRightFreshStartLink() {
+        if (seleniumUtils.isDisplayed(driver, fitRightFreshStartLink)) {
             return true;
         }
         return false;
@@ -191,8 +198,8 @@ public class BrandsPage {
      *
      * @return true if the link was clicked, false otherwise
      */
-    public boolean verifyRemedySkincareLink(){
-        if (seleniumUtils.isDisplayed(driver, remedySkincareLink)){
+    public boolean verifyRemedySkincareLink() {
+        if (seleniumUtils.isDisplayed(driver, remedySkincareLink)) {
             return true;
         }
         return false;
@@ -204,8 +211,8 @@ public class BrandsPage {
      * @return true if the link was clicked, false otherwise
      */
 
-    public boolean verifyMedlineDrypadUnderPadsLink(){
-        if (seleniumUtils.isDisplayed(driver, medlineDrypadUnderPadsLink)){
+    public boolean verifyMedlineDrypadUnderPadsLink() {
+        if (seleniumUtils.isDisplayed(driver, medlineDrypadUnderPadsLink)) {
             return true;
         }
         return false;
@@ -216,8 +223,8 @@ public class BrandsPage {
      *
      * @return true if the link was clicked, false otherwise
      */
-    public boolean verifyByACRELink(){
-        if (seleniumUtils.isDisplayed(driver, byACRELink)){
+    public boolean verifyByACRELink() {
+        if (seleniumUtils.isDisplayed(driver, byACRELink)) {
             return true;
         }
         return false;
@@ -228,8 +235,8 @@ public class BrandsPage {
      *
      * @return true if the link was clicked, false otherwise
      */
-    public boolean verifyAveScrubsLink(){
-        if (seleniumUtils.isDisplayed(driver, aveScrubsLink)){
+    public boolean verifyAveScrubsLink() {
+        if (seleniumUtils.isDisplayed(driver, aveScrubsLink)) {
             return true;
         }
         return false;
@@ -240,8 +247,8 @@ public class BrandsPage {
      *
      * @return true if the link was clicked, false otherwise
      */
-    public boolean verifyAngelStatScrubsLink(){
-        if (seleniumUtils.isDisplayed(driver, angelStatScrubsLink)){
+    public boolean verifyAngelStatScrubsLink() {
+        if (seleniumUtils.isDisplayed(driver, angelStatScrubsLink)) {
             return true;
         }
         return false;
@@ -252,8 +259,8 @@ public class BrandsPage {
      *
      * @return true if the link was clicked, false otherwise
      */
-    public boolean verifyComfortEaseScrubsLink(){
-        if (seleniumUtils.isDisplayed(driver, comfortEaseScrubsLink)){
+    public boolean verifyComfortEaseScrubsLink() {
+        if (seleniumUtils.isDisplayed(driver, comfortEaseScrubsLink)) {
             return true;
         }
         return false;
@@ -264,8 +271,8 @@ public class BrandsPage {
      *
      * @return true if the link was clicked, false otherwise
      */
-    public boolean verifyPerforMaxScrubsLink(){
-        if (seleniumUtils.isDisplayed(driver, perforMaxScrubsLink)){
+    public boolean verifyPerforMaxScrubsLink() {
+        if (seleniumUtils.isDisplayed(driver, perforMaxScrubsLink)) {
             return true;
         }
         return false;
@@ -276,8 +283,8 @@ public class BrandsPage {
      *
      * @return true if the link was clicked, false otherwise
      */
-    public boolean verifyMarthaStewartLink(){
-        if (seleniumUtils.isDisplayed(driver, marthaStewartLink)){
+    public boolean verifyMarthaStewartLink() {
+        if (seleniumUtils.isDisplayed(driver, marthaStewartLink)) {
             return true;
         }
         return false;
