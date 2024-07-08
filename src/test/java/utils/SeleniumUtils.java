@@ -16,7 +16,6 @@ import java.time.Duration;
 public class SeleniumUtils implements SeleniumUtilInterface {
 
     private WebDriver driver;
-    private static WebDriverWaitUtils waitUtils;
     private static final Logger log = LoggerFactory.getLogger(SeleniumUtils.class);
 
     /**
