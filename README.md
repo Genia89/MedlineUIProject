@@ -28,12 +28,12 @@ mvn clean install
 mvn test
 ```
 ## Known Issues
-### Text Encoding Issue in Search Box
+### Text Encoding Issue in Search Box on Medline at Home Page
 **Description:**
-When entering "women's scrubs" in the search box, the text is displayed as "women`&#039;`s scrub" after hitting enter. The apostrophe is improperly encoded as `&#039;`.
+When entering "women's scrubs" in the search box on the Medline at Home page, the text is displayed as "women`&#039;`s scrub" after hitting enter. The apostrophe is improperly encoded as `&#039;`.
 
 **Steps to Reproduce:**
-1. Go to the search page.
+1. Go to the Medline at Home page.
 2. Enter "women's scrubs" or any word with the apostrophe in the search box.
 3. Press enter.
 4. Observe the search box displaying "women`&#039;`s scrub" instead of "women's scrubs."
